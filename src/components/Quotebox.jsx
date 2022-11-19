@@ -1,4 +1,5 @@
 import React from 'react'
+import BtnQuote from './BtnQuote'
 
 const Quotebox = ({quoteRandom, handleClick, colorRandom}) => {
     
@@ -16,7 +17,10 @@ const Quotebox = ({quoteRandom, handleClick, colorRandom}) => {
         <i className="card__icon fa-solid fa-quote-left"></i>
         <p className='card__quote'>{quoteRandom.quote}</p>
         <h1 className='card__author'>{quoteRandom.author}</h1>
-        <button style={objStyleBtn} className='card__btn' onClick={handleClick}>&gt;</button>
+        <BtnQuote
+            objStyleBtn={objStyleBtn}
+            handleClick={handleClick}
+        />
     </article>
 
   )

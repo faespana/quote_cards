@@ -6,7 +6,6 @@ import colors from "./json/colors.json"
 
 function App() {
 
-  
   const getRandomFromArray = arr => {
     const indexRandom = Math.floor(arr.length*Math.random()) 
     return arr[indexRandom]
